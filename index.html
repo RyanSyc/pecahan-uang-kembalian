@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uang Kembalian</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>Program Duit Kembalian</header>
+
+    <div class="wrapper">
+      <div class="menu-left">
+        <div class="input-box1">
+          <div class="input-field">
+            <p>Harga</p>
+            <div class="input-form">
+              <input type="text" id="harga" />
+              <button class="btn" id="btn-random" onclick="random_number()">
+                ?
+              </button>
+            </div>
+          </div>
+
+          <div class="input-field">
+            <p>Bayar</p>
+            <input type="text" id="bayar" />
+          </div>
+        </div>
+
+        <div class="input-box2">
+          <button class="btn" id="btn-reset" onclick="reset()">Reset</button>
+          <button class="btn" id="btn-find" onclick="find()">Find</button>
+        </div>
+
+        <div class="input-box3">
+          <div class="input-field">
+            <p>Kembalian</p>
+            <p id="kembalian">0</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-right">
+        <div class="money-card card-100k">
+          <!-- <div><img class="money-icon" src="data/100k.jpg" /></div> -->
+          <p>100,000</p>
+          <p class="value" id="rp100k">-</p>
+        </div>
+
+        <div class="money-card card-50k">
+          <!-- <div><img class="money-icon" src="data/50k.jpg" /></div> -->
+          <p>50,000</p>
+          <p class="value" id="rp50k">-</p>
+        </div>
+
+        <div class="money-card card-20k">
+          <!-- <div><img class="money-icon" src="data/20k.jpg" /></div> -->
+          <p>20,000</p>
+          <p class="value" id="rp20k">-</p>
+        </div>
+
+        <div class="money-card card-10k">
+          <!-- <div><img class="money-icon" src="data/10k.jpg" /></div> -->
+          <p>10,000</p>
+          <p class="value" id="rp10k">-</p>
+        </div>
+
+        <div class="money-card card-5k">
+          <!-- <div><img class="money-icon" src="data/5k.jpg" /></div> -->
+          <p>5,000</p>
+          <p class="value" id="rp5k">-</p>
+        </div>
+
+        <div class="money-card card-2k">
+          <!-- <div><img class="money-icon" src="data/2k.jpg" /></div> -->
+          <p>2,000</p>
+          <p class="value" id="rp2k">-</p>
+        </div>
+
+        <div class="money-card card-1k">
+          <!-- <div><img class="money-icon" src="data/1k.jpg" /></div> -->
+          <p>1,000</p>
+          <p class="value" id="rp1k">-</p>
+        </div>
+
+        <div class="money-card card-500">
+          <!-- <div><img class="money-icon" src="data/500.jpg" /></div> -->
+          <p>500</p>
+          <p class="value" id="rp500">-</p>
+        </div>
+
+        <div class="money-card card-200">
+          <!-- <div><img class="money-icon" src="data/200.jpg" /></div> -->
+          <p>200</p>
+          <p class="value" id="rp200">-</p>
+        </div>
+
+        <div class="money-card card-100">
+          <!-- <div><img class="money-icon" src="data/100.jpg" /></div> -->
+          <p>100</p>
+          <p class="value" id="rp100">-</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

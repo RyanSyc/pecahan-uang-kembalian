@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: hsl(225, 20%, 16%);
+  --main: hsl(221, 17%, 37%);
+  --font: hsl(0, 0%, 100%);
+  --btn: hsl(134, 42%, 55%);
+  --btn-hover: hsl(134, 42%, 45%);
+  --btn-active: hsl(134, 42%, 35%);
+  --100k: hsl(359, 55%, 65%);
+  --50k: hsl(205, 55%, 42%);
+  --20k: hsl(130, 40%, 60%);
+  --10k: hsl(271, 40%, 60%);
+  --5k: hsl(24, 40%, 60%);
+  --2k: hsl(166, 15%, 40%);
+  --1k: hsl(51, 15%, 50%);
+  --500: hsl(97, 8%, 70%);
+  --200: hsl(99, 8%, 65%);
+  --100: hsl(97, 8%, 60%);
+}
+
+html {
+  color: var(--font);
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+body {
+  background-color: var(--background);
+  width: 100%;
+  height: 100vh;
+  padding: 5%;
+}
+
+header {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-left {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+}
+
+.menu-right {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  grid-auto-flow: column;
+  width: 60%;
+}
+
+.input-box1 {
+  background-color: var(--main);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50%;
+  margin: 1rem 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  border-radius: 25px;
+}
+
+.input-box2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0.5rem;
+}
+
+.input-box3 {
+  background-color: var(--main);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  height: 25%;
+  margin: 1rem 0.5rem;
+  margin-top: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  border-radius: 25px;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  gap: 0.5rem;
+  width: 100%;
+  height: 100%;
+}
+
+.input-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  width: 90%;
+  height: 1.5rem;
+  font-size: 1rem;
+  padding: 0.1rem;
+  padding-left: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+#btn-random {
+  font-size: 1rem;
+  border: none;
+  color: var(--font);
+  cursor: pointer;
+  width: 30px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.btn {
+  font-size: 0.75rem;
+  font-weight: bold;
+  width: 40%;
+  height: 30px;
+  background-color: var(--btn);
+  border: none;
+  color: var(--font);
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover);
+}
+
+.btn:active {
+  background-color: var(--btn-active);
+}
+
+.money-card {
+  background-color: var(--main);
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+}
+
+.money-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.value {
+  margin-left: auto;
+}
+
+.card-100k {
+  background-color: var(--100k);
+}
+
+.card-50k {
+  background-color: var(--50k);
+}
+
+.card-20k {
+  background-color: var(--20k);
+}
+
+.card-10k {
+  background-color: var(--10k);
+}
+
+.card-5k {
+  background-color: var(--5k);
+}
+
+.card-2k {
+  background-color: var(--2k);
+}
+
+.card-1k {
+  background-color: var(--1k);
+}
+
+.card-500 {
+  background-color: var(--500);
+}
+
+.card-200 {
+  background-color: var(--200);
+}
+
+.card-100 {
+  background-color: var(--100);
+}
